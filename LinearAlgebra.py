@@ -7,6 +7,7 @@ Created on Sun Jun 14 21:20:07 2020
 """
 
 import numpy as np
+from scipy.linalg import null_space
 
 #creating an array
 a = np.array([10,2,3,4,5])
@@ -185,6 +186,16 @@ print(Z)
 
 print(np.matmul(Z,Z))
 print(np.linalg.matrix_power(Z,2))
+
+
+
+# Calculating the kernel of a matrix
+N = np.mat("3,4; 3,4")
+print("N: \n", N)
+
+k = null_space(N)
+
+print("Ker(N): \n", k)
 
 
 

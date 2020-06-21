@@ -12,6 +12,20 @@ body {
 	margin:auto;
 	overflow:hidden;
 }
+B
+.clr {
+	clear: both;
+}
+
+#big-box .container2 {
+	width:55%;
+	margin:auto;
+	overflow: hidden;
+	background-color: LightSlateGrey;
+	background:rgba(180,180,180,0.7);
+
+
+}
 
 .container h1 {
 	text-align: center;
@@ -48,13 +62,71 @@ body {
 	padding-right: 15px;
 }
 
+#big-box {
+	background-image: url(star.jpg);
+	background-position: center top;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: 0px 400px 0px 0px;
+	min-height: 700px;
+}
+
+#big-box .container2 .pic {
+	float:left;
+	width:30%;
+	padding:0 40px 0 0;
+	box-sizing: border-box;
+	opacity: 1;
+}
+
+#big-box .container2 .pic img{
+	margin: auto;
+	padding: 40px;
+	opacity: 1;
+
+}
+
+#big-box .container2 .bio {
+	float:left;
+	width:70%;
+	position: relative;
+	top: 20px;
+	padding-left: 70px;
+	box-sizing: border-box;
+	opacity: 1;
+}
+
+
+#big-box .container2 .bio p{
+	position: relative;
+	line-height: 1.8em;
+	color: black;
+	padding-left: 100px;
+	padding-right: 100px;
+	text-align: justify;
+
+}
+
+#big-box .container2 .bio a{
+	text-decoration: none;
+	color: black;
+
+}
+
+#big-box .container2 .bio a:hover{
+	color: MidnightBlue;
+
+}
+
+
+
 .button {
 	color:white;
 	border:none;
 }
 
 #navbar .container .button:hover {
-	color:red;
+	color:coral;
 }
 
 
@@ -84,7 +156,6 @@ body {
 #sidebar {
 	float:left;
 	margin-top:10px;
-	padding: 0 0 0 20px;
 	color:white;
 	width:30%;
 	box-sizing: border-box;
